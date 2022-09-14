@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+main{
+	margin: 50px auto;
+	width: 40%;
+}
+input[type='text']{
+	border: 0px;
+	border-bottom: 2px solid #61dafb;
+	outline: none;
+	width: 100%;
+}
+.button{
+	color: white;
+	background-color: #61dafb;
+	border-radius: 2px;
+	outline: none;
+	border: none;
+	padding: 7px 15px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.button:hover{
+	opacity: 0.8;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.tasks{
+	margin: 20px auto;
+}
+.taskcontainer{
+	padding: 10px;
+	border: 1px solid #61dafb;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: all 400ms;
+}
+.taskcontainer:hover{
+	scale: 1.05;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width: 700px) {
+	main{
+		width: 70%;
+	}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 500px) {
+	main{
+		width: 85%;
+	}
 }
